@@ -113,6 +113,7 @@ main{
   padding: 20px 40px 20px 40px;
   width: 600px;
 
+  font-size: 1vw;
   text-align: left;
   color: white;
 }
