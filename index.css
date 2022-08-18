@@ -1,0 +1,368 @@
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: 250px 1fr;
+}
+
+.allPage{
+  position: relative;
+}
+
+header{
+  background-color: rgb(235, 235, 235);
+  color: rgb(0, 56, 74);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid rgb(54, 54, 54);
+}
+
+.headNameTitle{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 100;
+  font-size: 78px;
+  margin: 0;
+  padding: 20px 0px 0px 20px;
+}
+.headJobDescription{
+  margin: 0;
+  padding: 0px 0px 25px 20px;
+
+}
+.AleIcon{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.AleIcon img{
+  width: 70px;
+  padding-right: 33px;
+}
+.AleIcon img:hover{
+  cursor: pointer;
+}
+.datiPersonaliText{
+  color: rgb(0, 56, 74);
+  padding-right: 30px;
+  padding-top: 8px;
+}
+.datiPersonali{
+  background-color: rgb(5, 91, 119);
+  color: white;
+  border-radius: 12px;
+  position: absolute;
+  bottom: -500px;
+  left: -400px;
+  right: 130px;
+  top: 90px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-right: 80px;
+  padding-left: 20px;
+  box-shadow: 0px 0px 15px rgba(42, 42, 42, 0.6);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+}
+.datiPersonali p{
+  padding-bottom: 8px;
+}
+.datiPersonali li{
+  padding-bottom: 8px;
+}
+
+.AleIcon:hover .datiPersonali{
+  opacity: 1;
+}
+
+/* ^La sezione sopra è corretta e a posto, riguarda solo la barra del menu in alto eccetto il body */
+
+main{
+  background-color: rgb(5, 91, 119);
+  color: rgb(235, 235, 235);
+  display: grid;
+  grid-template-rows: 690px 500px 400px 1fr 700px 210px;
+}
+
+.backgroundCV{
+  background-image: url(Immagini/CVLavoroAleBlueBig.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ background-position: left bottom;
+
+  display: flex;
+  justify-content: right;
+}
+
+.CVLavoroAle{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.CVLavoroText{
+  background-color: rgba(54, 54, 54, 0.4);
+  border-radius: 10px;
+
+  margin: 20px 40px 20px 40px;
+  padding: 20px 40px 20px 40px;
+  width: 600px;
+
+  text-align: left;
+  color: white;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* La sezione subito qui sopra è a posto e riguarda la mia attuale professione */
+
+.sezioneDiplomi{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sezioneDiplomi a{
+  text-decoration: none;
+}
+
+.boxShcool{
+  position: relative;
+}
+.textBox{
+  background-color: rgba(54, 54, 54, 0.8);
+
+  position: absolute;
+  top: 200px;
+  bottom: 200px;
+  right: 50px;
+  left: 50px;
+  z-index: 10;
+  transition: 0.5s;
+}
+.textBox:hover{
+  top: 195px;
+  bottom: 195px;
+  right: 45px;
+  left: 45px;
+  padding-top: 5px;
+  cursor: pointer;
+
+}
+
+.textMPT{
+  color: white;
+}
+.textMPT:hover{
+  color: lightgray;
+}
+.textAFC{
+  color: white;
+  padding-top: 17px;
+}
+.textAFC:hover{
+  color: lightgray;
+}
+.textCISA{
+  color: white;
+  padding-top: 30px;
+}
+.textCISA:hover{
+  color: lightgray;
+}
+.textIAF{
+  color: white;
+  padding-top: 42px;
+}
+.textIAF:hover{
+  color: lightgray;
+}
+
+.diplomaIMG{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: 0.75s;
+}
+.diplomaIMG:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* la sezione appena sopra è terminata, potrei voler aggiungere un link ai documenti, ma vediamo */
+
+.sezioneLingue{
+  background-color: rgb(5, 91, 119);
+  color: rgb(235, 235, 235);
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+
+  padding-top: 80px;
+
+}
+
+.sezioneLingue div{
+  display: grid;
+  grid-template-rows: 1fr 2fr 40px;
+  justify-items: center;
+}
+.sezioneLingue p{
+  width: 280px;
+}
+.sezioneLingue img{
+  height: 30px;
+}
+
+/* Qui finisce e si completa la sezione Lingue */
+
+.sezioneAltreEsperienze{
+  display: flex;
+  flex-direction: column;
+}
+.textRelative{
+  position: relative;
+
+  text-align: center;
+}
+
+.sezioneAltreEsperienze img{
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+
+  transition: 0.75s;
+}
+.sezioneAltreEsperienze img:hover{
+  opacity: 0.8;
+}
+.textBoxEsperienzeProfessionali{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  
+}
+
+.dataEsperienza{
+  font-size: 2vw;
+  font-weight: 300;
+  
+
+  opacity: 1;
+  z-index: 10;
+}
+.professione{
+  font-size: 2vw;
+  font-weight: 300;
+ 
+
+  opacity: 1;
+  z-index: 10;
+}
+
+/* Qui finiscono le esperienze professionali ed iniziano i software */
+
+.sezioneSoftwareTitolo{
+  background-color: rgb(5, 91, 119);
+  color: rgb(235, 235, 235);
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  text-align: center;
+
+}
+.titoloCompetenze{
+  margin-top: 30px;
+}
+.sezioneSoftware{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sezioneSoftware img{
+  width: 80px;
+}
+.sezioneSoftware h3{
+  font-weight: 500;
+}
+.sezioneSoftware p{
+  font-weight: 300;
+}
+.chiTuBox{
+  background-color: white;
+  border-radius: 12px;
+}
+.programmazione,
+.softwareMisti,
+.pacchettoAdobe,
+.pacchettoOffice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start
+  
+}
+.programmazione div,
+.softwareMisti div,
+.pacchettoAdobe div,
+.pacchettoOffice div{
+  margin-bottom: 25px;
+}
+
+
+.sezioneContatti{
+  background-color: rgb(235, 235, 235);
+  color: rgb(5, 91, 119);
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 300
+
+}
+.sezioneContatti img{
+  align-self: baseline;
+}
+.sezioneContatti p{
+  color: rgb(5, 91, 119);
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.sezioneContatti img{
+  align-self: flex-end;
+}
+.sezioneContatti a{
+  text-decoration: none;
+}
+.AleAscolta{
+  height: 200px;
+  object-fit: cover;
+}
+.AleGrida{
+  height: 200px;
+  object-fit: cover;
+}
+
