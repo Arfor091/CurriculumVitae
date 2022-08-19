@@ -360,6 +360,7 @@ p{
 }
 .contattiTextBox{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .AleAscolta{
@@ -371,5 +372,5 @@ p{
   object-fit: cover;
 }
 .copyrightText{
-  font-size: 4px;
+  font-size: 8px;
 }
