@@ -358,6 +358,10 @@ p{
 .sezioneContatti a{
   text-decoration: none;
 }
+.contattiTextBox{
+  display: flex;
+  justify-content: space-between;
+}
 .AleAscolta{
   height: 200px;
   object-fit: cover;
@@ -367,5 +371,5 @@ p{
   object-fit: cover;
 }
 .copyrightText{
-  font-size: 8px;
+  font-size: 4px;
 }
