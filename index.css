@@ -371,5 +371,6 @@ p{
   object-fit: cover;
 }
 .copyrightText{
+  background-color: black;
   font-size: 4px;
 }
