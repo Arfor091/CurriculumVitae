@@ -360,7 +360,7 @@ p{
 }
 .contattiTextBox{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .AleAscolta{
