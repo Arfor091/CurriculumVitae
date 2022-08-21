@@ -237,52 +237,76 @@ p{
   display: flex;
   flex-direction: column;
 }
-.textRelative{
-  position: relative;
 
-  text-align: center;
-}
+.textBoxFalegname,
+.textBoxLaboratorista,
+.textBoxMilitare,
+.textBoxPittore,
+.textBoxVideomaker,
+.textBoxGrafico,
+.textBoxConsulente{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.sezioneAltreEsperienze img{
-  height: 120px;
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.3;
+  padding: 20px 30px 20px 30px;
 
-  transition: 0.75s;
-}
-.sezioneAltreEsperienze img:hover{
-  opacity: 0.8;
-}
-.textBoxEsperienzeProfessionali{
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  
+  opacity: 0.3;
+}
+.textBoxFalegname:hover,
+.textBoxLaboratorista:hover,
+.textBoxMilitare:hover,
+.textBoxPittore:hover,
+.textBoxVideomaker:hover,
+.textBoxGrafico:hover,
+.textBoxConsulente:hover {
+  opacity: 0.8;
+}
+.textBoxConsulente{
+  background-image: url(Immagini/Professioni/Consulente.jpg);
+}
+.textBoxFalegname{
+  background-image: url(Immagini/Professioni/Falegname.jpg);
+}
+.textBoxLaboratorista{
+  background-image: url(Immagini/Professioni/Laboratorista.jpg);
+}
+.textBoxMilitare{
+  background-image: url(Immagini/Professioni/Militare.jpg);
+}
+.textBoxPittore{
+  background-image: url(Immagini/Professioni/Pittore.jpg);
+}
+.textBoxVideomaker{
+  background-image: url(Immagini/Professioni/Videomaker.jpg);
+}
+.textBoxGrafico{
+  background-image: url(Immagini/Professioni/Grafico.jpg);
 }
 
-.dataEsperienza{
+
+.paragrafiEsperienze{
+  padding: 5px 10px 5px 10px;
   font-size: 2vw;
   font-weight: 300;
-  
-
   opacity: 1;
-  z-index: 10;
+  text-align: center;
 }
-.professione{
-  font-size: 2vw;
-  font-weight: 300;
- 
-
-  opacity: 1;
-  z-index: 10;
+.textBoxFalegname:hover .paragrafiEsperienze,
+.textBoxLaboratorista:hover .paragrafiEsperienze,
+.textBoxMilitare:hover .paragrafiEsperienze,
+.textBoxPittore:hover .paragrafiEsperienze,
+.textBoxVideomaker:hover .paragrafiEsperienze,
+.textBoxGrafico:hover .paragrafiEsperienze,
+.textBoxConsulente:hover .paragrafiEsperienze{
+  background-color: rgba(5, 91, 119, 0.7);
+  border-radius: 10px;
 }
 
 /* Qui finiscono le esperienze professionali ed iniziano i software */
