@@ -113,7 +113,7 @@ main{
 
 @media screen and (max-width: 400px) {
   .CVLavoroText{
-    font-size: 0.1vh;
+    font-size: 10px;
   }
 }
 
