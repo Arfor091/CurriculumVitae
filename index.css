@@ -111,6 +111,18 @@ main{
   color: white;
 }
 
+@media screen and (max-width: 400px) {
+  .CVLavoroText{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-Width: 400.2px) {
+  .CVLavoroText{
+    font-size: 16px;
+  }
+}
+
 p{
   margin: 0px;
   padding: 0px;
