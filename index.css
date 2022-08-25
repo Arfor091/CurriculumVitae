@@ -105,7 +105,7 @@ main{
   margin: 20px 40px 20px 40px;
   padding: 20px 40px 20px 40px;
   max-height: 90%;
-  width: 700px;
+ 
 
   text-align: left;
   color: white;
@@ -113,13 +113,13 @@ main{
 
 @media screen and (max-width: 400px) {
   .CVLavoroText{
-    font-size: 10px;
+   max-width: 90%;
   }
 }
 
 @media screen and (min-Width: 400.2px) {
   .CVLavoroText{
-    font-size: 1.8vh;
+    max-width: 50%;
   }
 }
 
