@@ -98,23 +98,15 @@ main{
   justify-content: right;
 }
 
-.CVLavoroAle{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
-}
-
 .CVLavoroText{
   background-color: rgba(54, 54, 54, 0.4);
-  border-radius: 10px;
+  border-radius: 8px;
 
   margin: 20px 40px 20px 40px;
   padding: 20px 40px 20px 40px;
   max-height: 90%;
   width: 700px;
 
-  font-size: 1vw;
   text-align: left;
   color: white;
 }
